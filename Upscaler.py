@@ -188,6 +188,7 @@ def main(pathToImages, imageToUpscale):
     toUpscale = [] 
     try:
         toUpscale = imread(imageToUpscale)
+        toUpscale = toUpscale/255
     except:
         print("Image to upscale cannot be opened")
         
